@@ -31,4 +31,5 @@ async def amireallyalive(alive):
                      f"**> Copyright:** {versions.__copyright__}\n"
                      "**> [UPDATE](https://t.me/IOIIOIIIOIIOI)\n**"
                      f"**> 👤 USER**: {DEFAULTUSER}\n\n"
+                     CIAO
                      "▬▬▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬▬▬")
