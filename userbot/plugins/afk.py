@@ -57,7 +57,7 @@ async def _(event):
         if reason:
             await bot.send_message(event.chat_id, f"**Vado AFK ⛔️** __MOTIVO ~ {reason}__")
         else:
-            await bot.send_message(event.chat_id, f"**Sono AFK!**")
+            await bot.send_message(event.chat_id, f"**Sono AFK non scassare!**")
         await asyncio.sleep(5)
         await event.delete()
         try:
@@ -82,7 +82,7 @@ async def set_not_afk(event):
         total_afk_time = str((afk_end - afk_start))
     current_message = event.message.message
     if ".afk" not in current_message and "yes" in USER_AFK:  # pylint:disable=E0602
-        shite = await bot.send_message(event.chat_id, "__Non sono più AFK!__\n**Puoi scrivermi.**\nSono stato afk per:`" + total_afk_time + "`")
+        shite = await bot.send_message(event.chat_id, "__Non sono più AFK!__\n**Finalmente puoi scrivermi.**\nSono stato afk per:`" + total_afk_time + "`")
         try:
             await bot.send_message(  # pylint:disable=E0602
                 Var.PRIVATE_GROUP_ID,  # pylint:disable=E0602
@@ -155,7 +155,7 @@ async def on_afk(event):
             else:
                 afk_since = f"`{int(seconds)}s` **ago**"
         msg = None
-        message_to_reply = f"**⛔️ IL MIO CAPO È OFF ⛔️ DA** `{total_afk_time}`\n**QUINDI NON SPAMMARE GRAZIE.**" + \
+        message_to_reply = f"**⛔️ IL MIO CAPO È OFF ⛔️ DA** `{total_afk_time}`\n**QUINDI NON SPAMMARE GRAZIE PERCHE' SENNO' TI AMMAZZO
             f"\n\n**QUANDO SONO ONLINE RISPONDO A TUTTI BYE.**\n**MOTIVO**: {reason}" \
             if reason \
             else f"**⛔️ AL MOMENTO SONO OFF ⛔️**\n\n**LASCIA UN MESSAGGIO SE DEVI CHIEDERMI QUALCOSA GRAZIE ‼️**\n**APPENA TORNO CERCO DI RISPONDERE BYE 👍**"
